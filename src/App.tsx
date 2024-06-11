@@ -14,7 +14,6 @@ function App() {
   return (
     <>
       <Person name={"Sanjoy"} age={22} isMarried={false} />
-      <Person name={"Ray"} age={32} isMarried={true} />
       <Person
         name={userData.name}
         age={userData.age}
