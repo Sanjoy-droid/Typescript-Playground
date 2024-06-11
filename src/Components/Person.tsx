@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { UserContext } from "../Components/UserContextProvider";
 interface PersonProps {
   name: string;
   age: number;
@@ -6,6 +7,8 @@ interface PersonProps {
 }
 
 export const Person = (props: PersonProps) => {
+  // const { users, addUser, updateUser, deleteUser } = useContext(UserContext);
+
   // const [isShowInfo, setIsShowInfo] = useState<boolean>(false);
 
   // const tooggleInfo = () => {

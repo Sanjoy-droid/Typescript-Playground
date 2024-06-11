@@ -1,5 +1,6 @@
 import "./App.css";
 import { Person } from "./Components/Person";
+import { UserProvider } from "./Components/UserContextProvider";
 
 function App() {
   // let name: string = "sanjoy";
@@ -12,14 +13,14 @@ function App() {
 
   const userData = fetchUserData();
   return (
-    <>
+    <UserProvider>
       <Person name={"Sanjoy"} age={22} isMarried={false} />
       <Person
         name={userData.name}
         age={userData.age}
         isMarried={userData.isMarried}
       />
-    </>
+    </UserProvider>
   );
 }
 
